@@ -1,6 +1,14 @@
 import React from 'react';
 import { BRAND_PILLARS, INSTAGRAM_LINK, INSTAGRAM_HANDLE } from '../data/businessData';
-import { IconLeaf, IconDumbbell, IconSparkle, IconHeart, IconInstagram, IconExternalLink } from './Icons';
+import {
+  IconLeaf,
+  IconDumbbell,
+  IconSparkle,
+  IconHeart,
+  IconClock,
+  IconInstagram,
+  IconExternalLink,
+} from './Icons';
 
 export const About = () => {
   const getIcon = (type) => {
@@ -9,6 +17,8 @@ export const About = () => {
         return <IconLeaf className="w-6 h-6" />;
       case 'dumbbell':
         return <IconDumbbell className="w-6 h-6" />;
+      case 'clock':
+        return <IconClock className="w-6 h-6" />;
       case 'sparkle':
         return <IconSparkle className="w-6 h-6" />;
       case 'heart':
@@ -18,25 +28,25 @@ export const About = () => {
   };
 
   return (
-    <section id="about" className="section-padding about-section" aria-label="About The Protein Point">
+    <section id="about" className="section-padding about-section" aria-label="About The Protein Point & Quality Standards">
       <div className="container">
-        {/* Main About Layout: Left Brand Description, Right 2x2 Feature Cards */}
+        {/* Brand Philosophy & Story Grid */}
         <div className="about-main-layout">
-          {/* Left Column: Brand Story & Description */}
+          {/* Left Column: Brand Story */}
           <div className="about-text-col">
             <span className="section-tag">
               <IconLeaf className="w-4 h-4" />
-              Our Story
+              Our Story & Promise
             </span>
 
-            <h2 className="section-title">About The Protein Point</h2>
+            <h2 className="section-title">Honest Nutrition For Nanded</h2>
 
             <p className="about-lead">
-              The Protein Point is a local healthy-food startup in Nanded, Maharashtra, dedicated to serving fresh, tasty, and protein-oriented meals that fuel your active life.
+              The Protein Point is a homegrown healthy food startup in Nanded, Maharashtra. We started with a clear mission: making clean, protein-rich food fast, delicious, and affordable for everyone.
             </p>
 
             <p className="about-body">
-              We believe in honest nutrition without compromise. Every item is freshly prepared with wholesome oats, natural honey, crunchy dry fruits, seeds, and fresh fruits — giving you sustained energy whether you are training at the gym, studying, or working hard in Nanded.
+              Say goodbye to greasy snacks and sugar-loaded breakfasts. Every item on our menu is assembled with nutrient-dense oats, fresh fruits, crunchy seeds, pure peanut butter, and raw honey. Whether you are heading to college, sitting through a long office shift, or recovering from a gym workout, we fuel your body the right way.
             </p>
 
             <div className="about-slogan font-script">
@@ -44,13 +54,11 @@ export const About = () => {
             </div>
           </div>
 
-          {/* Right Column: Four Feature Cards in 2x2 Grid */}
+          {/* Right Column: 4 Distinct Brand Pillars (High Impact Grid) */}
           <div className="about-features-grid">
             {BRAND_PILLARS.map((pillar) => (
               <div key={pillar.id} className="about-feature-box">
-                <div className="about-feature-icon-wrap">
-                  {getIcon(pillar.icon)}
-                </div>
+                <div className="about-feature-icon-wrap">{getIcon(pillar.icon)}</div>
                 <h3 className="about-feature-title">{pillar.title}</h3>
                 <p className="about-feature-desc">{pillar.description}</p>
               </div>
@@ -58,19 +66,19 @@ export const About = () => {
           </div>
         </div>
 
-        {/* Instagram QR Card: Cleanly integrated within About section */}
+        {/* Instagram Community & Official QR Card */}
         <div className="about-instagram-card">
           <div className="instagram-card-inner">
             <div className="instagram-info-col">
               <span className="instagram-badge">
                 <IconInstagram className="w-4 h-4" />
-                Follow Us on Instagram
+                Join Our Instagram Community
               </span>
 
-              <h3 className="instagram-title">Support Us on Instagram</h3>
+              <h3 className="instagram-title">Follow Us on Instagram</h3>
 
               <p className="instagram-sub">
-                Scan the QR code to follow The Protein Point for daily updates, fresh menus, and healthy living inspiration in Nanded.
+                Scan the official QR code to follow <strong>The Protein Point</strong> for daily fresh menu updates, healthy eating tips, and fitness motivation right from Nanded.
               </p>
 
               <div className="instagram-handle-row">
@@ -86,7 +94,7 @@ export const About = () => {
                   aria-label="Visit The Protein Point on Instagram"
                 >
                   <IconInstagram className="w-4 h-4" />
-                  <span>Follow on Instagram</span>
+                  <span>Open Instagram Profile</span>
                   <IconExternalLink className="w-3.5 h-3.5" />
                 </a>
               </div>
@@ -103,7 +111,7 @@ export const About = () => {
                   loading="lazy"
                 />
               </div>
-              <span className="instagram-qr-caption">Scan to follow {INSTAGRAM_HANDLE}</span>
+              <span className="instagram-qr-caption">Scan with your phone camera to follow {INSTAGRAM_HANDLE}</span>
             </div>
           </div>
         </div>

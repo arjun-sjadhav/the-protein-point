@@ -1,14 +1,15 @@
 /**
- * The Protein Point - Official Menu Data
- * Source of truth: Official Menu Reference Poster
- * Exact prices, items, and ingredients as provided by the business owner.
+ * The Protein Point - Official Menu Data (Updated 2026 Edition)
+ * Source of truth: Official Menu Card
+ * Exact items, prices, calories, protein values, and ingredients.
  */
 
 export const MENU_CATEGORIES = [
-  { id: 'all', label: 'All Menu Items' },
-  { id: 'sandwiches', label: 'Protein Sandwiches' },
-  { id: 'oats', label: 'Oats Bowls' },
-  { id: 'chia', label: 'Chia Specials' },
+  { id: 'all', label: 'All Items' },
+  { id: 'sandwiches', label: 'Sandwiches' },
+  { id: 'bowls', label: 'Protein Bowls' },
+  { id: 'chia', label: 'Chia Special' },
+  { id: 'snacks', label: 'Healthy Snacks' },
 ];
 
 export const MENU_ITEMS = [
@@ -16,55 +17,181 @@ export const MENU_ITEMS = [
     id: 'brown-bread-sandwich',
     name: 'Brown Bread Sandwich',
     category: 'sandwiches',
-    ingredients: ['Brown bread', 'Banana', 'Peanut butter', 'Honey'],
-    tag: 'Energy Sandwich',
-    prices: [
-      { label: '2 PCS', price: 29 },
-      { label: '3 PCS', price: 39 },
-    ],
+    price: 29,
+    calories: '290 kcal',
+    protein: '10 g protein',
+    ingredients: ['Brown Bread', 'Banana', 'Peanut Butter', 'Honey'],
+    tag: 'Student Favorite',
+    image: '/images/item_brown_bread_sandwich.jpeg',
+    featured: true,
+    description: 'Crisp brown bread layered with freshly sliced bananas, pure peanut butter, and drizzled with golden natural honey.',
   },
   {
-    id: 'dry-fruits-sandwich',
-    name: 'Dry Fruits Sandwich',
+    id: 'dryfruit-sandwich',
+    name: 'Dryfruit Sandwich',
     category: 'sandwiches',
-    ingredients: ['Brown bread', 'Banana', 'Peanut butter', 'Honey', 'Dry fruits', 'Seeds'],
-    tag: 'Dry Fruits & Seeds',
-    prices: [
-      { label: '2 PCS', price: 39 },
-      { label: '3 PCS', price: 49 },
-    ],
+    price: 39,
+    calories: '380 kcal',
+    protein: '13 g protein',
+    ingredients: ['Brown Bread', 'Banana', 'Peanut Butter', 'Dry Fruits', 'Seeds', 'Honey'],
+    tag: 'Nutrient Rich',
+    image: '/images/item_dryfruit_sandwich.jpeg',
+    featured: true,
+    description: 'Wholesome brown bread packed with crunchy dry fruits, roasted seeds, peanut butter, banana, and pure natural honey.',
   },
   {
-    id: 'chia-seeds-glass',
-    name: 'Chia Seeds Glass',
+    id: 'rice-cake',
+    name: 'Rice Cake',
+    category: 'snacks',
+    price: 49,
+    calories: '200 kcal',
+    protein: '5.5 g protein',
+    ingredients: ['Rice Cake', 'Peanut Butter', 'Banana', 'Honey', 'Pomegranate', 'Seeds'],
+    tag: 'Light & Crunchy',
+    image: '/images/item_rice_cake.jpeg',
+    featured: false,
+    description: 'Light puffed rice cake layered with creamy peanut butter, sliced bananas, ruby pomegranate seeds, and honey drizzle.',
+  },
+  {
+    id: 'healthy-chia-seed-glass',
+    name: 'Healthy (Chia Seed) Glass',
     category: 'chia',
-    ingredients: ['Chia seeds', 'Apple', 'Banana', 'Seeds', 'Anar', 'Honey'],
+    price: 49,
+    calories: '230 kcal',
+    protein: '6 g protein',
+    ingredients: ['Chia Seeds', 'Milk', 'Banana', 'Apple', 'Seeds', 'Dry Fruits', 'Honey'],
     tag: 'Refresh Naturally',
-    prices: [
-      { label: 'SMALL', price: 39 },
-      { label: 'LARGE', price: 49 },
-    ],
+    image: '/images/real-chia-glass.jpeg',
+    realPhoto: true,
+    featured: true,
+    description: 'Nutrient-packed chia seeds soaked with fresh milk, topped with crunchy mixed seeds, diced fruits, raisins, and honey.',
   },
   {
     id: 'chocolate-oats-bowl',
     name: 'Chocolate Oats Bowl',
-    category: 'oats',
-    ingredients: ['Chocolate oats', 'Milk', 'Peanut butter', 'Banana', 'Honey'],
-    tag: 'Wholesome Cocoa',
-    prices: [
-      { label: 'SMALL', price: 49 },
-      { label: 'LARGE', price: 59 },
-    ],
+    category: 'bowls',
+    price: 69,
+    calories: '430 kcal',
+    protein: '17 g protein',
+    ingredients: ['Chocolate Oats', 'Milk', 'Peanut Butter', 'Banana', 'Honey'],
+    tag: 'Guilt-Free Cocoa',
+    image: '/images/item_chocolate_oats.jpeg',
+    featured: false,
+    description: 'Rich chocolate oats slow-cooked in milk, garnished with generous banana slices, smooth peanut butter, and honey.',
   },
   {
     id: 'power-oats-bowl',
     name: 'Power Oats Bowl',
-    category: 'oats',
-    ingredients: ['Oats', 'Milk', 'Peanut butter', 'Honey', 'Banana', 'Dry fruit', 'Apple', 'Anar'],
+    category: 'bowls',
+    price: 79,
+    calories: '800 kcal',
+    protein: '22 g protein',
+    ingredients: ['Oats', 'Milk', 'Banana', 'Fruits', 'Dry Fruits', 'Seeds', 'Honey', 'Peanut Butter'],
     tag: 'Signature Bowl',
-    prices: [
-      { label: 'SMALL', price: 69 },
-      { label: 'LARGE', price: 79 },
+    image: '/images/item_power_oats.jpeg',
+    featured: true,
+    description: 'High-energy bowl loaded with whole oats, milk, sliced bananas, blueberries, crisp apples, dry fruits, seeds, and peanut butter.',
+  },
+  {
+    id: 'protein-crunch-bowl',
+    name: 'Protein Crunch Bowl',
+    category: 'bowls',
+    price: 99,
+    calories: '900 kcal',
+    protein: '24 g protein',
+    ingredients: ['Muesli', 'Milk', 'Jaggery', 'Dry Fruits', 'Seeds', 'Peanut Butter', 'Fresh Fruits'],
+    tag: 'Maximum Protein',
+    image: '/images/real-protein-crunch-bowl.jpeg',
+    realPhoto: true,
+    featured: true,
+    description: 'Ultimate power bowl combining premium muesli, fresh milk, organic jaggery, loaded dry fruits, seeds, and creamy peanut butter.',
+  },
+];
+
+export const SUBSCRIPTION_PLANS = [
+  {
+    id: 'sub-power-oat',
+    bowlName: 'Power Oat Bowl',
+    dailyRate: 79,
+    image: '/images/item_power_oats.jpeg',
+    calories: '800 kcal',
+    protein: '22 g protein',
+    tiers: [
+      {
+        duration: '7 Days',
+        price: 479,
+        originalPrice: 555,
+        savings: 74,
+      },
+      {
+        duration: '15 Days',
+        price: 899,
+        originalPrice: 1185,
+        savings: 286,
+        popular: true,
+      },
+      {
+        duration: '30 Days',
+        price: 1699,
+        originalPrice: 2370,
+        savings: 671,
+      },
     ],
+  },
+  {
+    id: 'sub-protein-crunch',
+    bowlName: 'Protein Crunch Bowl',
+    dailyRate: 99,
+    image: '/images/real-protein-crunch-bowl.jpeg',
+    calories: '900 kcal',
+    protein: '24 g protein',
+    tiers: [
+      {
+        duration: '7 Days',
+        price: 599,
+        originalPrice: 693,
+        savings: 94,
+      },
+      {
+        duration: '15 Days',
+        price: 1149,
+        originalPrice: 1486,
+        savings: 336,
+        popular: true,
+      },
+      {
+        duration: '30 Days',
+        price: 2199,
+        originalPrice: 2779,
+        savings: 771,
+      },
+    ],
+  },
+];
+
+export const TARGET_AUDIENCES = [
+  {
+    id: 'students',
+    title: 'Students',
+    icon: '🎓',
+    points: ['Boost Concentration', 'Long Lasting Energy', 'Nutritious & Tasty', 'Budget-Friendly (from ₹29)'],
+  },
+  {
+    id: 'office-goers',
+    title: 'Office Goers',
+    icon: '💼',
+    points: ['Stay Energetic All Day', 'Keeps You Full & Focused', 'Quick 5-Minute Pickup', 'Healthy Snack Option'],
+  },
+  {
+    id: 'gym-lovers',
+    title: 'Gym Lovers',
+    icon: '💪',
+    points: ['High Protein (Up to 24g)', 'Healthy Natural Fats', 'Supports Muscle Recovery', 'Pre & Post-Workout Fuel'],
+  },
+  {
+    id: 'everyone',
+    title: 'Everyone',
+    icon: '🌱',
+    points: ['100% Natural & Fresh', 'Zero Artificial Preservatives', 'No Junk Food Regret', 'Supports Better Lifestyle'],
   },
 ];
