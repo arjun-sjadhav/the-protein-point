@@ -6,7 +6,7 @@ import {
   PHONE_NUMBER,
   PHONE_DISPLAY,
 } from '../data/businessData';
-import { IconMapPin, IconExternalLink, IconWhatsApp, IconClock } from './Icons';
+import { IconMapPin, IconExternalLink, IconWhatsApp, IconClock, IconPhone } from './Icons';
 
 export const Location = () => {
   // Determine live open/closed status based on Sunday
@@ -49,7 +49,8 @@ export const Location = () => {
 
             <div className="location-address-box">
               <div className="address-line-primary">
-                📍 {BUSINESS_INFO.landmark}
+                <IconMapPin className="w-4 h-4 text-gold flex-shrink-0" />
+                <span>{BUSINESS_INFO.landmark}</span>
               </div>
               <div className="address-line-secondary">
                 {BUSINESS_INFO.area}, {BUSINESS_INFO.city}
@@ -116,7 +117,8 @@ export const Location = () => {
                 className="btn btn-outline-primary"
                 aria-label="Call The Protein Point"
               >
-                <span>📞 Call: {PHONE_DISPLAY}</span>
+                <IconPhone className="w-3.5 h-3.5" />
+                <span>Call: {PHONE_DISPLAY}</span>
               </a>
             </div>
           </div>

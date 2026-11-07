@@ -14,16 +14,16 @@ export const About = () => {
   const getIcon = (type) => {
     switch (type) {
       case 'leaf':
-        return <IconLeaf className="w-6 h-6" />;
+        return <IconLeaf className="w-5 h-5" />;
       case 'dumbbell':
-        return <IconDumbbell className="w-6 h-6" />;
+        return <IconDumbbell className="w-5 h-5" />;
       case 'clock':
-        return <IconClock className="w-6 h-6" />;
+        return <IconClock className="w-5 h-5" />;
       case 'sparkle':
-        return <IconSparkle className="w-6 h-6" />;
+        return <IconSparkle className="w-5 h-5" />;
       case 'heart':
       default:
-        return <IconHeart className="w-6 h-6" />;
+        return <IconHeart className="w-5 h-5" />;
     }
   };
 

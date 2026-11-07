@@ -106,7 +106,7 @@ export const Navbar = () => {
               onClick={closeMenu}
             >
               <span>{link.label}</span>
-              <IconArrowRight className="w-4 h-4 text-leaf-green" />
+              <IconArrowRight className="mobile-nav-arrow" />
             </a>
           ))}
           <div className="mobile-nav-actions">
