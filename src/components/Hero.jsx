@@ -15,8 +15,8 @@ export const Hero = () => {
             </div>
 
             <h1 className="hero-title">
-              Daily Fuel For Nanded’s <br />
-              <span className="text-leaf">Students, Hustlers</span> <br />
+              Daily Fuel For Nanded’s <br className="hidden-mobile" />
+              <span className="text-leaf">Students, Hustlers</span> <br className="hidden-mobile" />
               <span className="text-gold">& Fitness Lovers.</span>
             </h1>
 

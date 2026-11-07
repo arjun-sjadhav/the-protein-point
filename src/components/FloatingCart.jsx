@@ -46,8 +46,8 @@ export const FloatingCart = () => {
         className="floating-whatsapp-fab"
         aria-label="Order directly on WhatsApp"
       >
-        <IconWhatsApp className="w-5 h-5 text-leaf-green" />
-        <span>Order on WhatsApp (8432666396)</span>
+        <IconWhatsApp className="w-4 h-4 text-leaf-green" />
+        <span>Order on WhatsApp</span>
       </a>
     </div>
   );
