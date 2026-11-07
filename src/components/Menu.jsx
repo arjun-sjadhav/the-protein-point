@@ -243,7 +243,7 @@ export const Menu = () => {
 
             <div className="actual-menu-img-frame" onClick={() => setMenuModalOpen(true)}>
               <img
-                src="/images/official-menu-board.webp"
+                src="/images/menu-new.jpeg"
                 alt="Official printed menu board of The Protein Point"
                 className="actual-menu-img"
               />
@@ -294,7 +294,7 @@ export const Menu = () => {
               <div className="lightbox-header-bar">
                 <h4>Official Stall Menu Board (Verified Rates)</h4>
                 <a
-                  href="/images/official-menu-board.webp"
+                  href="/images/menu-new.jpeg"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn btn-outline-cream btn-sm"
@@ -304,7 +304,7 @@ export const Menu = () => {
                 </a>
               </div>
               <img
-                src="/images/official-menu-board.webp"
+                src="/images/menu-new.jpeg"
                 alt="Official The Protein Point Menu Board Nanded"
                 className="lightbox-img"
               />

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { NAV_LINKS, BUSINESS_INFO } from '../data/businessData';
+import { NAV_LINKS, BUSINESS_INFO, WHATSAPP_LINK } from '../data/businessData';
 import { useCart } from '../context/CartContext';
 import { IconMenu, IconX, IconArrowRight, IconCart, IconWhatsApp } from './Icons';
 
@@ -72,7 +72,7 @@ export const Navbar = () => {
             </button>
 
             <a
-              href="https://wa.me/918432666396"
+              href={WHATSAPP_LINK}
               target="_blank"
               rel="noopener noreferrer"
               className="btn btn-whatsapp-nav desktop-only-btn"
@@ -120,7 +120,7 @@ export const Navbar = () => {
               <span>{totalItems > 0 ? `View Order (${totalItems} items)` : 'Browse Menu & Add Items'}</span>
             </a>
             <a
-              href="https://wa.me/918432666396"
+              href={WHATSAPP_LINK}
               target="_blank"
               rel="noopener noreferrer"
               className="btn btn-secondary"

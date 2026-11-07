@@ -4,9 +4,9 @@
  * Single source of truth for business details, links, phone, and social handles.
  */
 
-export const PHONE_NUMBER = "8432666396";
-export const PHONE_DISPLAY = "+91 8432666396";
-export const WHATSAPP_NUMBER = "918432666396";
+export const PHONE_NUMBER = "8432696396";
+export const PHONE_DISPLAY = "+91 8432696396";
+export const WHATSAPP_NUMBER = "918432696396";
 export const WHATSAPP_LINK = `https://wa.me/${WHATSAPP_NUMBER}`;
 
 export const INSTAGRAM_LINK = "https://www.instagram.com/proteinpoint_mh26?utm_source=qr&stkn=dzQ3bWdhZDZrOGU5";

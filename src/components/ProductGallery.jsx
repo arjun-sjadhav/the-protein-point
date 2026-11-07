@@ -132,14 +132,14 @@ export const ProductGallery = () => {
           <div className="gallery-card menu-board-card">
             <div
               className="gallery-img-wrap"
-              onClick={() => setModalImage('/images/official-menu-board.webp')}
+              onClick={() => setModalImage('/images/menu-new.jpeg')}
               role="button"
               tabIndex={0}
               aria-label="View enlarged official printed menu board"
-              onKeyDown={(e) => e.key === 'Enter' && setModalImage('/images/official-menu-board.webp')}
+              onKeyDown={(e) => e.key === 'Enter' && setModalImage('/images/menu-new.jpeg')}
             >
               <img
-                src="/images/official-menu-board.webp"
+                src="/images/menu-new.jpeg"
                 alt="Official printed menu board of The Protein Point"
                 className="gallery-img"
                 loading="lazy"
