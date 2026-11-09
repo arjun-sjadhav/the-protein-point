@@ -5,6 +5,7 @@ import { Hero } from './components/Hero';
 import { Menu } from './components/Menu';
 import { Subscriptions } from './components/Subscriptions';
 import { ProductGallery } from './components/ProductGallery';
+import { Reviews } from './components/Reviews';
 import { TargetAudience } from './components/TargetAudience';
 import { About } from './components/About';
 import { Location } from './components/Location';
@@ -24,6 +25,7 @@ export function App() {
           <Menu />
           <Subscriptions />
           <ProductGallery />
+          <Reviews />
           <TargetAudience />
           <About />
           <Location />

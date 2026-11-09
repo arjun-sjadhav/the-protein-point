@@ -46,12 +46,12 @@ export const ProductGallery = () => {
             <div className="gallery-card-content">
               <div className="gallery-meta-row">
                 <span className="badge-pill badge-cal">
-                  <IconFlame className="w-3.5 h-3.5" /> 230 kcal
+                  <IconFlame className="w-3.5 h-3.5" /> {realChia?.calories || '220 kcal'}
                 </span>
                 <span className="badge-pill badge-prot">
-                  <IconDumbbell className="w-3.5 h-3.5" /> 6g Protein
+                  <IconDumbbell className="w-3.5 h-3.5" /> {realChia?.protein || '7g Protein'}
                 </span>
-                <span className="gallery-price">₹49</span>
+                <span className="gallery-price">₹{realChia?.price || 49}</span>
               </div>
               <h3 className="gallery-item-title">Healthy (Chia Seed) Glass</h3>
               <p className="gallery-item-desc">
@@ -98,12 +98,12 @@ export const ProductGallery = () => {
             <div className="gallery-card-content">
               <div className="gallery-meta-row">
                 <span className="badge-pill badge-cal">
-                  <IconFlame className="w-3.5 h-3.5" /> 900 kcal
+                  <IconFlame className="w-3.5 h-3.5" /> {realBowl?.calories || '590 kcal'}
                 </span>
                 <span className="badge-pill badge-prot">
-                  <IconDumbbell className="w-3.5 h-3.5" /> 24g Protein
+                  <IconDumbbell className="w-3.5 h-3.5" /> {realBowl?.protein || '17g Protein'}
                 </span>
-                <span className="gallery-price">₹99</span>
+                <span className="gallery-price">₹{realBowl?.price || 99}</span>
               </div>
               <h3 className="gallery-item-title">Protein Crunch Bowl</h3>
               <p className="gallery-item-desc">

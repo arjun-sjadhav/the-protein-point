@@ -43,8 +43,8 @@ export const NAV_LINKS = [
   { label: 'Home', href: '#home' },
   { label: 'Menu', href: '#menu' },
   { label: 'Subscriptions', href: '#subscriptions' },
-  { label: 'Real Food', href: '#gallery' },
-  { label: 'About & Quality', href: '#about' },
+  { label: 'Reviews', href: '#reviews' },
+  { label: 'About', href: '#about' },
   { label: 'Location', href: '#location' },
 ];
 

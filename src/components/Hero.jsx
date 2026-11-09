@@ -11,17 +11,16 @@ export const Hero = () => {
           <div className="hero-content">
             <div className="hero-eyebrow">
               <span className="hero-eyebrow-dot"></span>
-              <span className="hero-eyebrow-text">Fresh Healthy Breakfast • Anand Nagar, Nanded</span>
+              <span className="hero-eyebrow-text">The Protein Point • Nanded</span>
             </div>
 
             <h1 className="hero-title">
-              Daily Fuel For Nanded’s <br className="hidden-mobile" />
-              <span className="text-leaf">Students, Hustlers</span> <br className="hidden-mobile" />
-              <span className="text-gold">& Fitness Lovers.</span>
+              Eat Clean. <span className="text-leaf">Train Hard.</span> <br className="hidden-mobile" />
+              <span className="text-gold">Live Better.</span>
             </h1>
 
             <p className="hero-desc">
-              Wholesome oatmeal bowls, high-protein muesli, natural peanut butter sandwiches & chia seed bowls. Freshly crafted with 100% pure honey, organic jaggery, and zero artificial preservatives.
+              Fresh, healthy and delicious breakfast made for your everyday routine.
             </p>
 
             <div className="hero-cta-group">
